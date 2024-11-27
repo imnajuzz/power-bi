@@ -1,0 +1,8 @@
+FaixaEtaria = 
+SWITCH(
+    TRUE(),
+    YEAR(TODAY()) - YEAR(dUsuario[Data de Nascimento]) <= 18, "Até 18 anos",
+    YEAR(TODAY()) - YEAR(dUsuario[Data de Nascimento]) <= 30, "19 a 30 anos",
+    YEAR(TODAY()) - YEAR(dUsuario[Data de Nascimento]) <= 50, "31 a 50 anos",
+    "Acima de 50 anos"
+)
